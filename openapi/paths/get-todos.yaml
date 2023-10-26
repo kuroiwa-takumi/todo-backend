@@ -1,0 +1,21 @@
+get:
+  summary: todoリスト一覧取得
+  parameters:
+    - in: header
+      description: ユーザートークン
+      name: user-token
+      required: true
+      schema:
+       $ref: '../parameters/user_token.yaml'
+  responses:
+    '200':
+      description: 取得成功
+      content:
+        application/json:
+          schema:
+            $ref: '../responses/get_todo_items_response.yaml'
+          examples:
+            todoリスト一覧:
+              $ref: '../examples/get_todo_items_response.yaml'
+  tags:
+    - todo

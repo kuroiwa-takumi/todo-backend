@@ -1,0 +1,15 @@
+Todo:
+  type: object
+  properties:
+    todo_uuid:
+      type: integer
+      example: 123
+    title:
+      type: string
+      example: 'Do something'
+    description:
+      type: string
+      example: '今日中に終わらせるぞ!'
+    completed:
+      type: boolean
+      example: false

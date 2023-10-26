@@ -1,0 +1,6 @@
+type: object
+properties:
+  todo_information:
+    $ref: '../schemas/todo_information.yaml'
+required:
+  - todo_information

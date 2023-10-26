@@ -1,0 +1,29 @@
+delete:
+  summary: todo削除
+  parameters:
+    - in: header
+      description: ユーザートークン
+      name: user-token
+      required: true
+      schema:
+        $ref: '../parameters/user_token.yaml'
+    - name: todoId
+      in: path
+      required: true
+      description: 削除するtodoのID
+      schema:
+        type: integer
+  responses:
+    '204':
+      description: 削除成功
+      content:
+        application/json; charset=utf-8:
+          schema:
+            $ref: '../responses/delete_todo_response.yaml'
+          examples:
+            todo削除成功:
+              $ref: '../examples/delete_todo_response.yaml'
+    '400':
+      description: 不正なリクエスト
+  tags:
+    - todo

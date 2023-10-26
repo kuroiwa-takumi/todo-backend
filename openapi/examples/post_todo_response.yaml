@@ -1,0 +1,4 @@
+description: todo登録成功。
+value:
+  todo_uuid: a12b345a-78c9-1020-7958-a479d6aa991b
+  todo_status: "新規作成"

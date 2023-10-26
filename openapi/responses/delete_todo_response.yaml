@@ -1,0 +1,6 @@
+type: object
+properties:
+  register_result:
+    type: array
+    items:
+      $ref: '../schemas/todo_delete_result.yaml'

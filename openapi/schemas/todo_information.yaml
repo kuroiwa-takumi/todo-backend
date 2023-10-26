@@ -1,0 +1,18 @@
+type: object
+description: TODOの情報
+properties:
+  title:
+    type: string
+    description: TODOのタイトル
+    example: "Do something"
+  description:
+    type: string
+    description: TODOの詳細
+    example: "今日中に終わらせるぞ!"
+  completed:
+    type: boolean
+    description: TODOの完了フラグ
+    example: false
+required:
+  - title
+  - description

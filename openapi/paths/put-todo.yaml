@@ -1,0 +1,33 @@
+put:
+  summary: todo更新
+  parameters:
+    - in: header
+      description: ユーザートークン
+      name: user-token
+      required: true
+      schema:
+        $ref: '../parameters/user_token.yaml'
+    - name: todoId
+      in: path
+      required: true
+      description: 更新するtodoのID
+      schema:
+        type: integer
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../requestBodies/put_todo_request.yaml'
+  responses:
+    '200':
+      description: 更新成功
+      content:
+        application/json; charset=utf-8:
+          schema:
+            $ref: '../responses/post_todo_response.yaml'
+          examples:
+            todo更新成功:
+              $ref: '../examples/post_todo_response.yaml'
+  tags:
+    - todo

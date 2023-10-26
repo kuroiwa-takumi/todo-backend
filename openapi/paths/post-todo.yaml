@@ -1,0 +1,30 @@
+post:
+  summary: todo登録
+  parameters:
+    - in: header
+      description: ユーザートークン
+      name: user-token
+      required: true
+      schema:
+        $ref: '../parameters/user_token.yaml'
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../requestBodies/post_todo_request.yaml'
+        examples:
+          todo登録:
+            $ref: '../examples/post_todo_request.yaml'
+  responses:
+    '201':
+      description: 登録成功
+      content:
+        application/json; charset=utf-8:
+          schema:
+            $ref: '../responses/post_todo_response.yaml'
+          examples:
+            todo登録成功:
+              $ref: '../examples/post_todo_response.yaml'
+  tags:
+    - todo

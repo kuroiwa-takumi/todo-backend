@@ -1,0 +1,14 @@
+{
+  "groupId": "com.kuroiwa",
+  "artifactId": "todo-api-generated",
+  "artifactVersion": "0.0.1-SNAPSHOT",
+  "apiPackage": "com.kuroiwa.todo.presentation.generated.controller",
+  "modelPackage": "com.kuroiwa.todo.presentation.generated.model",
+  "java17": true,
+  "components": {},
+  "info": {},
+  "library": "spring-boot",
+  "interfaceOnly": true,
+  "dateLibrary": "java8",
+  "openapi": "3.0.3"
+}

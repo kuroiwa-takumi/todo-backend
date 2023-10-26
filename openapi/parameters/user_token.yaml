@@ -1,0 +1,4 @@
+type: string
+description: ユーザートークン
+pattern: '[0-9a-zA-Z+/]*' # base64
+example: eyJ1c2VyX2lkIjoxNzI1MCwidXNlcl9uYW1lIjoi5LyK6JekIOa3syJ9 # { "user_id" : 1, "user_name": "黒岩テスト" }

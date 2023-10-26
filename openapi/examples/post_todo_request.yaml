@@ -1,0 +1,5 @@
+description: TODOを新規作成する
+value:
+  todo_information:
+    title: "Do something"
+    description: "今日中に終わらせるぞ!"

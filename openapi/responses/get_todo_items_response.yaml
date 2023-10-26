@@ -1,0 +1,6 @@
+type: object
+properties:
+  todos:
+    type: array
+    items:
+      $ref: '../schemas/todo.yaml'
