@@ -1,10 +1,16 @@
 #!/bin/bash
 
+echo "Starting OpenAPI code generation..."
+
 # シェルスクリプトのディレクトリパスを取得
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # 出力ディレクトリの設定
 OUTPUT_PATH="$DIR/../"
+
+# 出力ディレクトリの内容を削除
+echo "Deleting existing OpenAPI generated code..."
+rm -rf "${OUTPUT_PATH:?}/*"
 
 echo "Starting OpenAPI code generation..."
 
