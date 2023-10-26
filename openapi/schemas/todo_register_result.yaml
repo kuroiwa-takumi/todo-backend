@@ -1,0 +1,11 @@
+type: object
+properties:
+  todo_uuid:
+    type: string
+    description: TODO集約ID
+    format: uuid
+    example: a12b345a-78c9-1020-7958-a479d6aa991b
+  todo_status:
+    type: string
+    description: TODOのステータス
+    example: "新規作成"
