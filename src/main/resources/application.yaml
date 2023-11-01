@@ -1,0 +1,9 @@
+server:
+  shutdown: graceful
+
+spring:
+  profiles:
+    active: ${APP_ENV:local}
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration

@@ -1,6 +1,5 @@
-Todo:
-  type: object
-  properties:
-    is_deleted:
-      type: boolean
-      example: true
+type: object
+properties:
+  is_deleted:
+    type: boolean
+    example: true

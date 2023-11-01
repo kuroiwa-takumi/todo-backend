@@ -2,7 +2,7 @@
   "groupId": "com.kuroiwa",
   "artifactId": "todo-api-generated",
   "artifactVersion": "0.0.1-SNAPSHOT",
-  "apiPackage": "com.kuroiwa.todo.presentation.generated.controller",
+  "apiPackage": "com.kuroiwa.todo.presentation.generated.api",
   "modelPackage": "com.kuroiwa.todo.presentation.generated.model",
   "java17": true,
   "components": {},

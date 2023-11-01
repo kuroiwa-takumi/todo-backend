@@ -1,0 +1,13 @@
+openapi: 3.0.3
+info:
+  title: Todo List API
+  version: 1.0.0
+paths:
+  /todo-list:
+    $ref: 'paths/get-todos.yaml'
+  /todos:
+    $ref: 'paths/post-todo.yaml'
+  /todos/{todoId}:
+    $ref: 'paths/put-todo.yaml'
+  /todos/{todoId}/delete:
+    $ref: 'paths/delete-todo.yaml'
